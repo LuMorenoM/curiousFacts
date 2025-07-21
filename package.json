@@ -1,0 +1,26 @@
+{
+  "name": "curiousfacts",
+  "version": "1.0.0",
+  "description": "Test funciones unitarias",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuMorenoM/curiousFacts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuMorenoM/curiousFacts/issues"
+  },
+  "homepage": "https://github.com/LuMorenoM/curiousFacts#readme",
+  "dependencies": {
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1"
+  }
+}
