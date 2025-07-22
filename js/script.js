@@ -13,7 +13,7 @@ function addFactToFavorites(fact) {
     saveFavorites();
     renderFavorites();
   } else {
-    alert("That fact's is already on the favorites list!");
+    alert("That fact is already on the favorites list!");
   }
 }
 
@@ -33,12 +33,36 @@ async function showNewFact() {
   document.getElementById("fact-text").textContent = currentFact.text;
 }
 
+function showHome() {
+  document.getElementById("home-page").style.display = "block";
+  document.getElementById("favorites-page").style.display = "none";
+}
+
+function showFavorites() {
+  document.getElementById("home-page").style.display = "none";
+  document.getElementById("favorites-page").style.display = "block";
+  renderFavorites();
+}
+
+function router() {
+  const hash = window.location.hash;
+  if (hash === "#favorites") {
+    showFavorites();
+  } else {
+    showHome();
+  }
+}
+
+window.addEventListener("hashchange", router);
+window.addEventListener("DOMContentLoaded", () => {
+  router();
+  showNewFact();
+  renderFavorites();
+});
+
 document.getElementById("new-fact-btn").addEventListener("click", showNewFact);
 document.getElementById("save-fact-btn").addEventListener("click", () => {
   if (currentFact) {
     addFactToFavorites(currentFact);
   }
 });
-
-renderFavorites();
-showNewFact();
