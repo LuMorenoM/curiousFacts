@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>The Wise Cat</title>
 </head>
 <body>
+  <main class="container">
+
+  
+    <header class="header-section">
+      <div class="header-content">
+        <h1>The Wise Cat</h1>
+        <p>Curiosities told by the wisest cats on the internet.</p>
+      </div>
+      <img src="assets/glassesCat.png" alt="Wise Cat with Glasses" class="header-image" />
+    </header>
+
     
+    <nav class="navigation">
+      <a href="#home" class="nav-link">Curious Facts</a>
+      <a href="#favorites" class="nav-link">My Favorites</a>
+    </nav>
+
+    
+    <section id="home-page" class="curious-facts-section">
+      <h2>Curious Facts</h2>
+      <div class="fact-display-area">
+        <img src="assets/studentCat.png" alt="Student Cat" class="fact-image" />
+        <div class="fact-box-wrapper">
+          <p id="fact-text">Loading fact...</p>
+          <button id="save-fact-btn" class="action-bookmark-button">
+            <img src="assets/Add to Favorites.png" alt="Add to Favorites" class="bookmark-button" />
+          </button>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="new-fact-btn" class="action-button">
+          <img src="assets/Button.png" alt="Next Fact" class="newfact-button" />
+        </button>
+      </div>
+    </section>
+
+  
+    <section id="favorites-page" style="display: none;" class="my-favorites-section">
+      <h2>My Favorites</h2>
+      <ul id="favorites-list" class="favorites-list">
+      </ul>
+
+      <div class="surprise-cat-container">
+        <img src="assets/surprisedCat.png" alt="Surprised Cat" class="surprised-cat-image" />
+        <div class="speech-bubble">
+          <img src="assets/Speech.png" alt="Bubble" class="speech-bubble-image" />
+          <div class="speech-text">
+            <p>Wow! That was unexpected!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 The Wise Cat Team</p>
+    </footer>
+
+  </main>
+
+  <script type="module" src="./js/script.js"></script>
 </body>
 </html>
