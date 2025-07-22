@@ -54,7 +54,7 @@ open index.html
 
 ## 🧪 Running Tests
 
-Unit tests are written with **Jest**.
+Unit tests are written with **Mocha/Chai**.
 
 ```bash
 npm install
@@ -78,6 +78,6 @@ npm run test
   Developer.
 
   ---
-  ## 💡 Conclution
+  ## 💡 Conclusion
 
 The Wise Cat is more than just a random facts app — it’s a fun, educational, and visually engaging experience. With a cat-themed interface, mobile-first responsive design, clean architecture, and solid development practices (SPA structure, component reuse, and unit testing), this project showcases front-end development skills while delivering delightful trivia with personality.
