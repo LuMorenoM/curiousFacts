@@ -1,13 +1,16 @@
 {
   "name": "curiousfacts",
   "version": "1.0.0",
+  "type": "module",
   "description": "Test funciones unitarias",
   "main": "index.js",
   "directories": {
-    "test": "test"
+  "test": "test"
+  
   },
   "scripts": {
     "test": "mocha"
+  
   },
   "repository": {
     "type": "git",
