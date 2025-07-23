@@ -37,6 +37,7 @@ nav .nav-link {
     background-color: #C4CBF2;
     display: flex;
     align-items: center;
+    overflow: hidden; 
 }
 
 .header-content {
@@ -67,7 +68,7 @@ nav .nav-link {
 
 .curious-facts-section {
     background-color: #D8BDF2;
-    min-height: 450px;
+    min-height: 430px;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -257,4 +258,23 @@ footer {
     justify-content: space-between;
     }
 
+    .header-section {
+      height: 200px;
+      text-align: center;
+    }
+
+    .header-image {
+    width: 170px;
+    }
+
+    .fact-image {
+        display: block;
+        width: 250px;
+        margin-bottom: -400px;
+        margin-left: -30px;
+    }
+
+    .curious-facts-section {
+        overflow: hidden; 
+    }
 }    
