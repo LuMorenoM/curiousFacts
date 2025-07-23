@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 body {
     margin: 0;
     font-family: 'Neucha';
-    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     box-sizing: border-box;
-    padding: 10px;
 }
-.container {
+
+nav {
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 400px;
-    background-color: #fff; 
-    overflow: hidden; 
-    box-shadow: 0 4px 15px #C4CBF2(0, 0, 0, 0.2); 
-    display: flex; 
-    flex-direction: column;
+    background-color: #F2F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000; 
+    gap: 20px;
+}
+
+nav .logo-image {
+    width: 80px; 
+    height: auto;
+}
+
+nav .nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* --- SECCIÓN DE CABECERA --- */
@@ -25,12 +39,11 @@ body {
     background-color: #C4CBF2;
     display: flex;
     align-items: center;
-    padding: 20px;
-    
 }
 
 .header-content {
     flex: 1;
+    padding: 20px;
 }
 
 .header-section h1 {
@@ -50,14 +63,13 @@ body {
 }
 
 .header-image {
-    width: 150px; 
-    height: 160px;
-    border-radius: 10%; 
-    border: 2px solid #C4CBF2;
+    width: 150px;
+    margin-bottom: 0    ;
 }
 
 .curious-facts-section {
-    background-color: #D8BDF2; 
+    background-color: #D8BDF2;
+    min-height: 450px;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -82,11 +94,7 @@ body {
 }
 
 .fact-image {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    flex-shrink: 0;
-    align-items: center;
+display: none;
 }
 
 .fact-box-wrapper {
@@ -99,28 +107,20 @@ body {
     align-items: center;
 }
 
-.fact-box-wrapper { 
-    flex: 1;
-    position: relative;
-    background-image: url('../assets/card.png');
-    background-size: 100% 100%; 
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 150px;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px 20px 20px 20px; 
-    box-sizing: border-box;
-    text-align: left; 
+.fact-box-wrapper{
+    margin: 20px;
+    width: 300px;  
+    padding: 15px;           
+    height: auto;            
+    border: 2px solid black;
+    border-radius: 15px;      
+    background-color: transparent; 
 }
 
 #fact-text {
     position: relative; 
     z-index: 2; 
-    font-size: 1em;
+    font-size: 1.5em;
     color: #000000;
     margin: 0;
     line-height: 1.5;
@@ -138,6 +138,7 @@ body {
     align-items: center; 
     width: 100%;
 }
+
 .action-button {
     background: none; 
     border: none;
@@ -341,119 +342,3 @@ footer {
     100% { transform: translateX(-50%) translateY(0px) scale(1); }
 }
 
-
-/* --- Media Queries para Responsividad --- */
-@media (max-width: 420px) {
-    body {
-        padding: 10px;
-    }
-    .container {
-        max-width: 95%;
-    }
-
-    .header-section {
-        padding: 15px;
-    }
-    .header-section h1 {
-        font-size: 2em;
-    }
-    .header-section p {
-        font-size: 1em;
-    }
-    .header-image {
-        width: 80px;
-        height: 80px;
-    }
-
-    .curious-facts-section,
-    .my-favorites-section { /* Ajustado para la clase */
-        padding: 20px;
-    }
-
-    .curious-facts-section h2,
-    .my-favorites-section h2 {
-        font-size: 1.6em;
-    }
-
-    .fact-display-area {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .fact-image {
-        width: 80px;
-        height: 80px;
-    }
-
-    .fact-box-wrapper {
-        min-height: 120px;
-        padding: 15px 40px 15px 15px;
-    }
-
-    #fact-text {
-        font-size: 0.95em;
-    }
-
-    .action-bookmark-button {
-        width: 30px;
-        height: 30px;
-        top: 8px;
-        right: 8px;
-    }
-
-    .buttons {
-        margin-top: 8px;
-    }
-    .newfact-button {
-        width: 90px;
-    }
-
-    .favorites-list li {
-        padding: 10px 15px;
-        font-size: 0.8em;
-    }
-    .delete-btn {
-        width: 20px;
-        height: 20px;
-    }
-    .delete-icon {
-        width: 100%;
-        height: 100%;
-    }
-    .paw-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .clear-all-button {
-        padding: 8px 15px;
-        font-size: 0.9em;
-    }
-
-    .surprise-cat-container {
-        bottom: 5px;
-        right: 5px;
-        transform: scale(0.8);
-        transform-origin: bottom right;
-    }
-    .surprised-cat-image {
-        width: 70px;
-    }
-    .speech-bubble {
-        bottom: 55px;
-        font-size: 0.65em;
-        padding: 5px 8px;
-    }
-
-    footer {
-        padding: 10px 0;
-        font-size: 0.75em;
-    }
-}
-
-@media (max-width: 320px) {
-    .curious-facts-section,
-    .my-favorites-section {
-        padding: 15px;
-    }
-}
