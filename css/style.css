@@ -216,25 +216,16 @@ display: none;
 }
 
 .favorites-list li {
-    background-image: url('../assets/Rectangle 19.png');
-    background-size: 100% 100%; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-color: transparent; 
+    background-color: #C4CBF2; 
     display: flex;
     align-items: center;
     padding: 12px 18px; 
     margin-bottom: 10px;
     color: #000000; 
-    font-size: 1em;
+    font-size: 1.2em;
     position: relative;
-}
-
-.paw-icon { 
-    width: 25px;
-    height: 25px;
-    margin-right: 12px;
-    object-fit: contain;
+    height: auto;
+    border-radius: 20px;
 }
 
 .favorites-list li span {
@@ -270,6 +261,22 @@ display: none;
     object-fit: contain;
 }
 
+.surprised-cat-image {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: -30px;
+
+}
+
+.speech-bubble-image {
+    width: 200px;
+    height: auto;
+    margin-right: -65px;
+    margin-bottom: 50px;
+}
+
+
 footer {
     background-color: #ffffff; 
     color: rgb(0, 0, 0);
@@ -278,67 +285,5 @@ footer {
     font-size: 0.8em;
     border-radius: 0;
     margin-top: auto;
-}
-
-.surprise-cat-container {
-    position: bottom center; 
-    bottom: 50px; 
-    right: 50px; 
-    z-index: 10; 
-    display: flex;
-    align-items: center;
-    width: auto;
-}
-
-.surprised-cat-image {
-    width: 90px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    transform: translateX(50%);
-}
-
-.speech-bubble-image-wrapper {
-    position: absolute; /* Posiciona el contenedor del bocadillo con respecto al .surprise-cat-container */
-    bottom: 75px; /* Ajusta la altura del bocadillo sobre el gato */
-    left: 50%; /* Centrado horizontal */
-    transform: translateX(-50%); /* Ajuste fino para centrado horizontal */
-    width: 150px; /* Ancho deseado de tu imagen de bocadillo, ajusta según Speech.png */
-    height: 90px; /* Alto deseado de tu imagen de bocadillo, ajusta según Speech.png */
-    /* background-color: transparent; /* No es necesario si la imagen lo cubre todo */
-}
-
-.speech-bubble-image {
-    width: 100%; /* La imagen de bocadillo ocupa todo el wrapper */
-    height: 100%;
-    object-fit: contain; /* Asegura que la imagen no se distorsione */
-    display: block;
-}
-
-.speech-text {
-    position: absolute; /* Posiciona el texto con respecto al .speech-bubble-image-wrapper */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra el texto perfectamente dentro del wrapper */
-    width: 80%; /* Ancho del texto, ajusta si es necesario */
-    text-align: center;
-    color: #000000; /* Color del texto */
-    font-size: 0.8em; /* Tamaño de la fuente */
-    padding: 5px; /* Pequeño padding interno para el texto */
-    box-sizing: border-box; /* Incluye padding en el width */
-    z-index: 2; /* Asegura que el texto esté encima de la imagen del bocadillo */
-}
-
-.speech-text p {
-    margin: 0; /* Elimina márgenes predeterminados del párrafo */
-    line-height: 1.2;
-}
-
-
-
-@keyframes bounceIn {
-    0% { transform: translateX(-50%) translateY(20px) scale(0.8); opacity: 0; }
-    50% { transform: translateX(-50%) translateY(-5px) scale(1.05); opacity: 1; }
-    100% { transform: translateX(-50%) translateY(0px) scale(1); }
 }
 
