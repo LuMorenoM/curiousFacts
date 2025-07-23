@@ -1,10 +1,10 @@
 import { getFact } from "./api.js";
 
-let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+let favorites = JSON.parse(sessionStorage.getItem("favorites")) || [];
 let currentFact = null;
 
 function saveFavorites() {
-  localStorage.setItem("favorites", JSON.stringify(favorites));
+  sessionStorage.setItem("favorites", JSON.stringify(favorites));
 }
 
 function addFactToFavorites(fact) {
