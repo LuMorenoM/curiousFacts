@@ -3,9 +3,6 @@
 body {
     margin: 0;
     font-family: 'Neucha';
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
 }
 
@@ -262,7 +259,7 @@ display: none;
 }
 
 .surprised-cat-image {
-    width: 200px;
+    width: 150px;
     height: auto;
     object-fit: contain;
     margin-bottom: -30px;
@@ -270,10 +267,9 @@ display: none;
 }
 
 .speech-bubble-image {
-    width: 200px;
+    width: 150px;
     height: auto;
-    margin-right: -65px;
-    margin-bottom: 50px;
+    margin-right: -60px;
 }
 
 
