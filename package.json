@@ -5,12 +5,10 @@
   "description": "Test funciones unitarias",
   "main": "index.js",
   "directories": {
-  "test": "test"
-  
+    "test": "test"
   },
   "scripts": {
     "test": "mocha"
-  
   },
   "repository": {
     "type": "git",
@@ -22,7 +20,7 @@
     "url": "https://github.com/LuMorenoM/curiousFacts/issues"
   },
   "homepage": "https://github.com/LuMorenoM/curiousFacts#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^5.2.1",
     "mocha": "^11.7.1"
   }
