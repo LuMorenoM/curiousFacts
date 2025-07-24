@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
-body {
+html, body {
     margin: 0;
     font-family: 'Neucha';
     box-sizing: border-box;
+    height: 100%;
 }
 
 nav {
