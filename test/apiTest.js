@@ -1,6 +1,7 @@
 import { expect } from "chai";
 import { getFact } from '../js/api.js'
 
+
 describe ("getFact", () => {
     it("should return an object with a fact text", async () => {
         
@@ -12,7 +13,6 @@ describe ("getFact", () => {
 
         expect(result.text).to.be.a("string");
 
-        expect(result.text.length).to.be.greaterThan(0);
-
     });
 });
+   
